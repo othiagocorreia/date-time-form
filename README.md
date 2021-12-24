@@ -4,11 +4,11 @@
 
 About
 =========
-* [Objective](https://github.com/thiagodk0/date-time-form/blob/main/README.md#objective-)
-* [Packages](https://github.com/thiagodk0/date-time-form/blob/main/README.md#packages-)
-* [How to use](https://github.com/thiagodk0/date-time-form/blob/main/README.md#how-to-use-)
-* [Technologies](https://github.com/thiagodk0/date-time-form/blob/main/README.md#technologies-)
-* [Stats](https://github.com/thiagodk0/date-time-form/blob/main/README.md#stats-)
+* [Objective](https://github.com/othiagocorreia/date-time-form/blob/main/README.md#-objective)
+* [Packages](https://github.com/othiagocorreia/date-time-form/blob/main/README.md#-packages)
+* [How to use](https://github.com/othiagocorreia/date-time-form/blob/main/README.md#-how-to-use)
+* [Technologies](https://github.com/othiagocorreia/date-time-form/blob/main/README.md#-technologies)
+* [Stats](https://github.com/othiagocorreia/date-time-form/blob/main/README.md#-status)
 
 # 🎯 Objective
 This project was made for me to learn about how Javascript can access user's information wich was not passed by him.
