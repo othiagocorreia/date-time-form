@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/main.css">
+  <script src="/script.js" defer></script>
+
+  <title>Form-XSS</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="image-div">
+      <div class="welcome-msg">
+        <h1>Coworkers!</h1>
+        <p>A place where ideas and people are just one!</p>
+      </div>
+      <img src="/workers.svg " alt="hero-image">
+    </div>
+    
+    <div class="form">
+      <div class="msg">
+        <h1>Login</h1>
+      </div>
+      <form action="">
+        <div class="input-field">
+          <input required class="input-data" type="text" name="nome" id="name">
+          <label>Name</label>
+        </div>
+        <div class="input-field">
+          <input required class="input-data" type="email" name="email" id="email">
+          <label>Email</label>
+        </div>
+        <button type="submit"  id="send" class="btn-cad">Sign In</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
