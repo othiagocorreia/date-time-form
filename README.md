@@ -18,7 +18,7 @@ To run this project, you will need the following packages:
 
 * In your terminal run
 
-        ``` npm install ```
+       ``` npm install ```
 
     
 # 🔨 How to Use
