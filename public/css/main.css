@@ -123,6 +123,14 @@ form{
     color: rgba(248,248,255);
 }
 
+.input-field input:-webkit-autofill,
+.input-field input:-webkit-autofill:hover, 
+.input-field input:-webkit-autofill:focus, 
+.input-field input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #D19F47 inset !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
 .input-data{
     min-width: 100%;
     min-height: 80%;

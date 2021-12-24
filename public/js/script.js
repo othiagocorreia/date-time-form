@@ -16,13 +16,13 @@ btn.addEventListener("click", function(e){
 function dateTime(){
 	date = new Date;
 	
-	const day = date.getDate()
-	const month = date.getMonth() + 1 
+	const day = String(date.getDate()).padStart(2, '0')
+	const month = String(date.getMonth()+1).padStart(2, '0')
 	const year = date.getFullYear()
 	const fullDate = day + "/" + month + "/" + year
 
-	const hours = date.getHours()
-	const minutes = date.getMinutes()
+	const hours = String(date.getHours()).padStart(2, '0')
+	const minutes = String(date.getMinutes()).padStart(2, '0')
 	const seconds = date.getSeconds()
 	const fullTime = hours + ":" + minutes + ":" + seconds
 
