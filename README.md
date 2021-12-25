@@ -29,6 +29,8 @@ To run this project, you will need the following packages:
 
 3. Install all the dependencies 
 
+4. In your terminal run ``` npm start ```
+
 # 👾 Technologies
 
 * [NodeJS](https://nodejs.org/en/)
