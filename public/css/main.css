@@ -18,86 +18,68 @@ body{
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .image-div{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 50rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    justify-content: center;
 }
 
 .welcome-msg{
-    width: 80%;
+    width: 85%;
+    height: 35%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .welcome-msg h1{
-    font-size:4.5rem; 
+    font-size:5.5rem; 
     color:#09750e;
-    padding-right: 1rem;
 }
 
 .welcome-msg p{
-    font-family: charter;
-    font-size:2rem;
-    font-weight: 500;
+    font-size: 2rem;
     font-style: italic;
 }
 
 .image-div img{
-    width: 80%;
-    height: 45%;
+    width: 55rem;
+    height: 50rem;
 }
 
 .form{
-    width: 50%;
-    max-width: 700px;
-    height:85%;
-    max-height: 500px;
+    width: 100%;
+    height: 30rem;
     display: flex;
-    align-items:center; 
-    justify-content: center;
     flex-direction: column;
-    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
 }
 
 .msg{
-    width: 80vw;
-    height:10vh;
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-bottom: 5px;
-}
-
-.msg h1{
-    font-size:4.6rem;
-    color: #FFFFFF;
+    display: none;
 }
 
 form{
-    width: 80vw;
-    height: 55vh;
+    width: 80%;
+    height: 85%;
     max-width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
 }
 
 .input-field{
@@ -109,7 +91,7 @@ form{
 
 .input-field label{
     font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: #e4e4e4;
     position: absolute;
     top:10px;
     left:5px;
@@ -118,9 +100,9 @@ form{
 
 .input-field input:hover + label,
 .input-field input:valid + label {
-    font-size:1.6rem;
+    font-size:1.2rem;
     top: -16px;
-    color: rgba(248,248,255);
+    color: #F8F8FF;
 }
 
 .input-field input:-webkit-autofill,
@@ -137,11 +119,11 @@ form{
     font-size: 1.6rem;
     font-family: Poppins;
     padding-left: 0.5rem;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     outline:none;
     border-style: none;
-    border-bottom:1px solid rgba(248, 248, 255);
+    border-bottom:1px solid #f8f8ff;
     background-color: transparent;
 }
 
@@ -152,7 +134,7 @@ form{
     font-family: Poppins;
     color: #FFFFFF;
     border-style: none;
-    border-radius:10px;
+    border-radius:1rem;
     background:#09750e;
     transition:linear .4s;
 }
@@ -164,10 +146,185 @@ form{
 
 .json{
     width: 95%;
-    height: 25vh;
+    height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
     color:#FFFFFF;
     font-size: 2.3rem;
+}
+
+@media screen and (min-width: 1000px) {
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    
+    html{
+        font-size:62.5%;
+    }
+    
+    html,
+    body{
+        height: 100vh;
+        font-family: monospace;
+        background: #D19F47;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image-div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    
+    .welcome-msg{
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .welcome-msg h1{
+        font-size:4.5rem; 
+        color:#09750e;
+        padding-right: 1rem;
+    }
+    
+    .welcome-msg p{
+        font-family: charter;
+        font-size:2rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    .image-div img{
+        width: 80%;
+        height: 55%;
+    }
+    
+    .form{
+        width: 50%;
+        max-width: 700rem;
+        height:85%;
+        max-height: 500rem;
+        display: flex;
+        align-items:center; 
+        justify-content: center;
+        flex-direction: column;
+        color: #FFFFFF;
+    }
+    
+    .msg{
+        width: 80%;
+        height:10%;
+        max-width: 500rem;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 0.5rem;
+    }
+    
+    .msg h1{
+        font-size:4.6rem;
+        color: #FFFFFF;
+    }
+    
+    form{
+        width: 80%;
+        height: 55%;
+        max-width: 500rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+    
+    .input-field{
+        width: 95%;
+        height: 5rem;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+    
+    .input-field label{
+        font-size: 1.8rem;
+        color: #ffffff99;
+        position: absolute;
+        top:1rem;
+        left:0.5px;
+        transition: .1s linear;
+    }
+    
+    .input-field input:hover + label,
+    .input-field input:valid + label {
+        font-size:1.6rem;
+        top: -1.6rem;
+        color: #f8f8ff;
+    }
+    
+    .input-field input:-webkit-autofill,
+    .input-field input:-webkit-autofill:hover, 
+    .input-field input:-webkit-autofill:focus, 
+    .input-field input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px #D19F47 inset !important;
+        -webkit-text-fill-color: #FFFFFF !important;
+    }
+    
+    .input-data{
+        min-width: 100%;
+        min-height: 80%;
+        font-size: 1.6rem;
+        font-family: Poppins;
+        padding-left: 0.5rem;
+        color: white;
+        text-decoration: none;
+        outline:none;
+        border-style: none;
+        border-bottom:0.1rem solid #f8f8ff;
+        background-color: transparent;
+    }
+    
+    .btn-cad{
+        width: 22rem;
+        height: 3rem;
+        font-weight: 700;
+        font-family: Poppins;
+        color: #FFFFFF;
+        border-style: none;
+        border-radius:1rem;
+        background:#09750e;
+        transition:linear .4s;
+    }
+    
+    .btn-cad:hover{
+        color: #130f0d;
+        background: #FFA500;
+    }
+    
+    .json{
+        width: 95%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#FFFFFF;
+        font-size: 2.3rem;
+    }
 }
