@@ -328,3 +328,178 @@ form{
         font-size: 2.3rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    
+    html{
+        font-size:62.5%;
+    }
+    
+    html,
+    body{
+        height: 100vh;
+        font-family: monospace;
+        background: #D19F47;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image-div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    
+    .welcome-msg{
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .welcome-msg h1{
+        font-size:4.5rem; 
+        color:#09750e;
+        padding-right: 1rem;
+    }
+    
+    .welcome-msg p{
+        font-family: charter;
+        font-size:2rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    .image-div img{
+        width: 80%;
+        height: 55%;
+    }
+    
+    .form{
+        width: 50%;
+        max-width: 700rem;
+        height:85%;
+        max-height: 500rem;
+        display: flex;
+        align-items:center; 
+        justify-content: center;
+        flex-direction: column;
+        color: #FFFFFF;
+    }
+    
+    .msg{
+        width: 80%;
+        height:10%;
+        max-width: 500rem;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 0.5rem;
+    }
+    
+    .msg h1{
+        font-size:4.6rem;
+        color: #FFFFFF;
+    }
+    
+    form{
+        width: 80%;
+        height: 55%;
+        max-width: 500rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+    
+    .input-field{
+        width: 95%;
+        height: 5rem;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+    
+    .input-field label{
+        font-size: 1.8rem;
+        color: #ffffff99;
+        position: absolute;
+        top:1rem;
+        left:0.5px;
+        transition: .1s linear;
+    }
+    
+    .input-field input:hover + label,
+    .input-field input:valid + label {
+        font-size:1.6rem;
+        top: -1.6rem;
+        color: #f8f8ff;
+    }
+    
+    .input-field input:-webkit-autofill,
+    .input-field input:-webkit-autofill:hover, 
+    .input-field input:-webkit-autofill:focus, 
+    .input-field input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px #D19F47 inset !important;
+        -webkit-text-fill-color: #FFFFFF !important;
+    }
+    
+    .input-data{
+        min-width: 100%;
+        min-height: 80%;
+        font-size: 1.6rem;
+        font-family: Poppins;
+        padding-left: 0.5rem;
+        color: white;
+        text-decoration: none;
+        outline:none;
+        border-style: none;
+        border-bottom:0.1rem solid #f8f8ff;
+        background-color: transparent;
+    }
+    
+    .btn-cad{
+        width: 22rem;
+        height: 3rem;
+        font-weight: 700;
+        font-family: Poppins;
+        color: #FFFFFF;
+        border-style: none;
+        border-radius:1rem;
+        background:#09750e;
+        transition:linear .4s;
+    }
+    
+    .btn-cad:hover{
+        color: #130f0d;
+        background: #FFA500;
+    }
+    
+    .json{
+        width: 95%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#FFFFFF;
+        font-size: 2.3rem;
+    }
+}
