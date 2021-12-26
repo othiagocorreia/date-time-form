@@ -10,6 +10,7 @@ btn.addEventListener("click", function(e){
 
 	const nameAndEmail = JSON.stringify({name:nameValue, email:emailValue, date:dateTime().fullDate, time:dateTime().fullTime}, null, 4)
 
+	console.log(nameAndEmail)
 	document.getElementById("container").innerHTML ='<p class="json">'+ nameAndEmail +'</p>'
 })
 
@@ -23,7 +24,7 @@ function dateTime(){
 
 	const hours = String(date.getHours()).padStart(2, '0')
 	const minutes = String(date.getMinutes()).padStart(2, '0')
-	const seconds = date.getSeconds()
+	const seconds = String(date.getSeconds()).padStart(2, '0')
 	const fullTime = hours + ":" + minutes + ":" + seconds
 
 	return {fullTime, fullDate}
